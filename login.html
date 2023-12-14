@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+     <link rel="stylesheet" href="css/login.css" >
+</head>
+<body>
+  
+    <div class="login-cont mt-5">
+      <h1 class="text-success mb-4">GUVI GEEK NETWORK </h1>
+		<h2 class="mb-3">Login</h2>
+    <div class="messages">
+      <div class="success-msg-cont">
+          <strong> <p class="success-msg text-success"></p></strong>
+      </div>
+      <div class="err-msg-cont">
+          <strong><p class="err-msg text-danger"></p></strong>
+      </div>
+    </div>
+
+		<form id="Login-form">
+			<div class="form-group mb-3">
+				<label for="email">Email:</label>
+				<input type="email" class="form-control" id="email" name="email" required>
+				<div id="email-error" class="text-danger"></div>
+			</div>
+            <div class="form-group mb-3">
+				<label for="name">Password:</label>
+				<input type="password" class="form-control" id="name" name="password" required>
+			</div>
+			<button type="submit" class="btn btn-success mt-3">Login</button>
+		</form>
+
+        <div class="mt-5">
+            <p>Don't have account?<a href="register.html" class="text-success">Register</a></p>
+        </div>
+        <div>
+            <h3>BACK TO <a href="index.html" class="text-decoration-none text-success">HOME</a></h3>
+        </div>
+	</div>
+    <script src="js/login.js"></script>
+</body>
+</html>

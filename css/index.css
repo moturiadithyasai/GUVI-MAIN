@@ -1,0 +1,67 @@
+.home-space{
+    margin-left: 10px;
+    
+    width: 100%;
+    height: 100%;
+    
+
+}
+body{
+    background-image: url("/assets/bgwallpaper.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.img-brand{
+    height: 50px;
+    width: 130px;
+}
+
+.navbar{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important; /* !important is used to overide the parent style property */
+}
+
+.bg-light{
+    background-color: #FFFFFF !important;
+}
+
+.navbar-collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #0DBA4B;
+}
+
+@media (max-width: 992px){
+    .navbar-collapse{
+    display: flex;
+    justify-content: flex-start;
+   
+}
+body{
+    background-repeat: no-repeat;
+    background-size: 1000px 992px ;
+}
+}
+
+@media (max-width: 692px){
+    body{
+        background-repeat: no-repeat;
+        background-size: 700px 992px ;
+    }
+}
+
+
+
+
+
+.navbar-light .navbar-nav .nav-link{
+    font-size: 24px !important;
+    margin-right: 16px;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color:  #0DBA4B !important;
+}
